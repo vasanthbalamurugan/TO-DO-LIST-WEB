@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>to-do-list-app</title>
+    <!-- external css file link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Bootstrap5 link -->
+    <link rel="stylesheet" href="../lib/bootstrap.min.css" />
+
+    <!-- font-awesome link -->
+    <script
+      src="https://kit.fontawesome.com/a843bd8017.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+    <div class="todo">
+      <!-- top -->
+      <div class="top text-center">
+        <img
+          src="../asset/undraw_to_do_list_re_9nt7.svg"
+          alt="anner1"
+          width="70%"
+          style="margin-top: 50px"
+        />
+
+        <h2 style="position: absolute; top: 8px; left: 45px; font-size: 30px">
+          ~ TO DO LIST ~
+        </h2>
+      </div>
+
+      <!-- middle -->
+
+      <div class="middle text-center">
+        <form id="Form" action="">
+          <input type="text" id="inputtxt" placeholder="write here..." />
+        </form>
+
+        <button
+          id="btn1"
+          style="
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 15px;
+            border: none;
+            font-size: 25px;
+            color: white;
+            background-color: #023047;
+          "
+        >
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <p id="error"></p>
+
+      <!-- bottom -->
+
+      <div class="bottom">
+        <!-- items here -->
+        <ul></ul>
+
+        <div class="nofound">
+          <img
+            src="../asset/undraw_no_data_re_kwbl.svg"
+            alt="banner2"
+            width="80px"
+          />
+          <h6>No data here</h6>
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <div class="footer text-center">
+        <button onclick="print()">
+          print <i class="fa-solid fa-print"></i>
+        </button>
+      </div>
+
+      <div class="text-center " style="width: 100%; position: absolute; bottom: -14%; color: #00bbf9; opacity: .5;">
+        <p style="text-transform:lowercase;">vfim works &copy; <a href="">vasanthportfolio.com</a></p>
+      </div>
+    </div>
+
+   
+
+    <script src="../lib/jquery-3.7.1.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
