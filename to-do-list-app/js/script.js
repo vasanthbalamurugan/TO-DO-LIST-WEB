@@ -19,4 +19,5 @@ $(document).ready(function () {
   $("ul").on("click", ".fa-trash", function () {
     $(this).parent("li").fadeOut(200);
   });
+  
 });
